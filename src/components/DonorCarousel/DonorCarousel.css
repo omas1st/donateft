@@ -1,3 +1,5 @@
+/* frontend/src/components/DonorCarousel/DonorCarousel.css */
+
 .donor-carousel-container {
   background: white;
   border-radius: 20px;
@@ -18,8 +20,21 @@
   padding: 1rem;
   background: linear-gradient(135deg, #f8fafc 0%, #edf2f7 100%);
   border-radius: 12px;
-  margin: 0 10px;
+  margin: 0 12px; /* Increased horizontal margin for spacing */
   transition: transform 0.3s;
+}
+
+/* Add extra spacing on smaller screens */
+@media (max-width: 768px) {
+  .donor-card {
+    margin: 0 8px;
+  }
+}
+
+@media (max-width: 480px) {
+  .donor-card {
+    margin: 0 6px;
+  }
 }
 
 .donor-card:hover {
@@ -39,6 +54,16 @@
   color: #4a6fa5;
 }
 
+/* Slick slider customizations to ensure spacing is respected */
+.slick-list {
+  margin: 0 -6px;
+}
+
+.slick-slide > div {
+  padding: 0 6px;
+}
+
+/* Dots styling */
 .slick-dots li button:before {
   color: #4a6fa5;
 }
