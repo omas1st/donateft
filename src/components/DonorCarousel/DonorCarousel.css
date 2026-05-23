@@ -1,0 +1,48 @@
+.donor-carousel-container {
+  background: white;
+  border-radius: 20px;
+  padding: 2rem 1rem;
+  margin: 2rem 0;
+  box-shadow: 0 5px 20px rgba(0, 0, 0, 0.08);
+}
+
+.carousel-title {
+  text-align: center;
+  color: #2c5f8a;
+  margin-bottom: 1.5rem;
+  font-size: 1.8rem;
+}
+
+.donor-card {
+  text-align: center;
+  padding: 1rem;
+  background: linear-gradient(135deg, #f8fafc 0%, #edf2f7 100%);
+  border-radius: 12px;
+  margin: 0 10px;
+  transition: transform 0.3s;
+}
+
+.donor-card:hover {
+  transform: translateY(-5px);
+}
+
+.donor-name {
+  font-size: 1.1rem;
+  font-weight: 600;
+  color: #2d3748;
+  margin-bottom: 0.5rem;
+}
+
+.donor-amount {
+  font-size: 1.3rem;
+  font-weight: bold;
+  color: #4a6fa5;
+}
+
+.slick-dots li button:before {
+  color: #4a6fa5;
+}
+
+.slick-dots li.slick-active button:before {
+  color: #2c5f8a;
+}

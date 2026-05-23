@@ -1,0 +1,63 @@
+.stats-container {
+  background: rgba(255, 255, 255, 0.95);
+  backdrop-filter: blur(5px);
+  border-radius: 20px;
+  padding: 2rem;
+  margin: 2rem 0;
+  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.1);
+  animation: fadeIn 0.6s ease;
+}
+
+.stat-card {
+  text-align: center;
+  padding: 1rem;
+}
+
+.stat-card h3 {
+  font-size: 1.2rem;
+  color: #4a6fa5;
+  margin-bottom: 0.5rem;
+}
+
+.stat-amount {
+  font-size: 2.5rem;
+  font-weight: bold;
+  color: #2c5f8a;
+}
+
+.progress-section {
+  margin-top: 1.5rem;
+}
+
+.progress-bar {
+  background: #e2e8f0;
+  border-radius: 10px;
+  height: 12px;
+  overflow: hidden;
+}
+
+.progress-fill {
+  background: linear-gradient(90deg, #4a6fa5, #2c5f8a);
+  height: 100%;
+  transition: width 0.5s ease;
+  border-radius: 10px;
+}
+
+.progress-text {
+  text-align: center;
+  margin-top: 0.5rem;
+  font-weight: 500;
+  color: #2c5f8a;
+}
+
+@media (min-width: 768px) {
+  .stats-container {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 1rem;
+  }
+  
+  .progress-section {
+    grid-column: span 3;
+  }
+}
